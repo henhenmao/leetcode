@@ -10,7 +10,8 @@ import shutil
 
 
 def organize():
-    dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
+    dir = os.path.abspath(os.path.join(os.getcwd())) # make sure you're in the right directory
+    print(dir)
 
     for file in os.listdir(dir):
         # skips everything that isn't a file (mainly directories)
