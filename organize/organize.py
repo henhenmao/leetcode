@@ -29,7 +29,7 @@ def organize():
         n = int(match.group(1))
         start = (n // 10) * 10 + 1
         end = start + 9
-        folder = f"{start}-{end}"
+        folder = f"{int(start):03d}-{int(end):03d}" # pads the numbers to fit into three digits
 
         # checks if designated folder exists
         # if not then creates a new folder
