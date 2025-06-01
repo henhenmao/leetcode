@@ -16,7 +16,7 @@ def organize():
     for file in os.listdir(dir):
         # skips everything that isn't a file (mainly directories)
         if os.path.isdir(os.path.join(dir, file)):
-            print(f"failed to move {file}")
+            print(f"failed to move {file} probably because it's a directory")
             continue
 
         # uses regex to match the first found number in front of the file name
@@ -29,7 +29,17 @@ def organize():
         n = int(match.group(1))
         start = (n // 10) * 10 + 1
         end = start + 9
-        folder = f"{int(start):03d}-{int(end):03d}" # pads the numbers to fit into three digits
+
+        # i'm just gonna put all ids that are 500+ into one folder
+        # might change the number if too many
+        # i just don't want folders containing single files
+
+        limit = 300
+
+        if start >= limit:
+            folder = f"{limit}+"
+        else:
+            folder = f"{int(start):03d}-{int(end):03d}" # pads the numbers to fit into three digits
 
         # checks if designated folder exists
         # if not then creates a new folder
@@ -42,7 +52,6 @@ def organize():
         dst_path = os.path.join(folder_path, file)
         shutil.move(src_path, dst_path)
         print(f"Moved {file} to {folder}/")
-
 
 organize()
         
