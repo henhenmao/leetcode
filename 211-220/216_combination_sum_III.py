@@ -3,7 +3,7 @@ from typing import List
 
 
 """
-216. Combination Sum (https://leetcode.com/problems/combination-sum-iii/)
+216. Combination Sum III (https://leetcode.com/problems/combination-sum-iii/)
 
 we can use a dfs algorithm + backtracking to get all possibilities of digits
 
@@ -24,10 +24,6 @@ algorithm:
 
 runtime: O(9^n) you have a max of 9 possibilities for n dfs iterations
 space: O(9^n)
-
-
-
-
 """
 
 
