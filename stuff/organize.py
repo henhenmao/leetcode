@@ -8,15 +8,15 @@ import shutil
 - requires each question to be labelled with its question id at beginning of the file name
 """
 
-
 def organize():
-    dir = os.getcwd() # make sure you're in the right directory
+    dir = os.path.abspath(os.path.join(__file__, "..", ".."))
     print(dir)
 
     for file in os.listdir(dir):
-        # skips everything that isn't a file (mainly directories)
-        if os.path.isdir(os.path.join(dir, file)):
-            print(f"failed to move {file} probably because it's a directory")
+
+
+        # skips everything that isn't a file or a git thing (mainly directories)
+        if os.path.isdir(os.path.join(dir, file)) or ".git" in file:
             continue
 
         # uses regex to match the first found number in front of the file name

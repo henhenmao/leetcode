@@ -43,7 +43,10 @@ def display():
 
         
 def findUF():
-    for dirpath, dirnames, filenames in os.walk(os.getcwd()):
+    path = os.path.abspath(os.path.join(__file__, "..", ".."))
+
+
+    for dirpath, dirnames, filenames in os.walk(path):
 
         # skip the git directory (idk why it's there in the first place)
         if ".git" in dirnames:
