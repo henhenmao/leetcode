@@ -9,6 +9,7 @@ def count():
     num_files = 0
     num_dirs = 0
     dir = os.getcwd()
+    print(dir)
 
     for file in os.listdir(dir):
         if os.path.isdir(file):

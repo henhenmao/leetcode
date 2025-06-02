@@ -19,11 +19,8 @@ algorithm:
             you undershot and need to raise your low pointer
     4. if low == mid, then you have reached the closest integer to the perfect square rounded down
 
-
 runtime: O(log(x)), since you are performing a binary search on x itself
 space: O(1)
-        
-
 """
 
 def mySqrt(x: int) -> int:
