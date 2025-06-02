@@ -2,7 +2,7 @@
 from typing import List
 
 """
-136. Single Number ()
+136. Single Number (https://leetcode.com/problems/single-number/description/)
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 this question is the coolest i've ever seen it amazes me because i'm not smart enough to understand it
