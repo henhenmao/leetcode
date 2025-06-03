@@ -17,12 +17,12 @@ dfs algorithm:
     3. if you have come across all element of the list (come across, not added to subset), exit the recursion
 
 runtime: O(2^n)
-space: O(2^n)
+space: O(n) sub contains a max of n values
 """
 
 def subsets(nums: List[int]) -> List[List[int]]:
     res = []
-    sub = []
+    sub = []    
     def dfs(i):
         if i >= len(nums):
             res.append(sub[:])
