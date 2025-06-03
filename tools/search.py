@@ -24,12 +24,13 @@ def search(file):
         
         for filename in filenames:
             if file in filename:
-                matches.append(f"{filename} found in {dirpath}")
+                matches.append(f"{filename} at {os.path.join(dirpath, filename)}")
 
     if matches:
         print(f'possible matches for "{file}"\n────────── ⋆⋅☆⋅⋆ ──────────')
         for match in matches:
-            print(match + "\n")
+            print(match)
+        print()
     else:
         print("no matches found....\n")
 
