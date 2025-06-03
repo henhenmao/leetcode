@@ -34,12 +34,15 @@ def solveNQueens(n: int) -> List[List[str]]:
     
     # function that checks if board[x][y] is being attacked by other queens or not
     def isAttacked(x, y):
+        return
 
 
     
     board = [["." for _ in range(n)] for _ in range(n)]
+    print(board)
 
 
     def queens():
+        return
 
 
