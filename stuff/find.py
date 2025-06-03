@@ -40,11 +40,11 @@ def display():
             print(file)
     else:
         print(f"everything is commented :)")
+    print()
 
         
 def findUF():
-    path = os.path.abspath(os.path.join(__file__, "..", ".."))
-
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
     for dirpath, dirnames, filenames in os.walk(path):
 
