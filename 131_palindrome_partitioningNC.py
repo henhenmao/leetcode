@@ -4,13 +4,23 @@ from typing import List
 """
 131. Palindrome Partitioning (https://leetcode.com/problems/palindrome-partitioning/description/)
 
+neetcode helped me with this problem 
+
 getting all partitions in the string
     split the current string s into s[:i] and s[i:]
     make sure s[:i] is a palindrome is well, if not the backtrack
     recursively call for partitions in s[i:] 
 
+algorithm:
+    1. for the string s, take every substring from i to j
+    2. prune the cases of non-palindromic substrings by checking if s[i:j+1] is a palindrome or not
+    3. if the substring is palindromic, recurse into the right side for more palindromes
+    4. if your index makes it to the end of the s, you know you have a palindromic partition
 
-    
+runtime: O(n * n^2) where n is the length of the string
+    getting partitions takes O(2^n) time and checking palindromes is O(n)
+
+space: O(n) partition size at most
 
 """
 
