@@ -1,11 +1,18 @@
 
-# testing command line argument
+# reminding myself how defaultdict from collections works
 
-import sys
 
-if len(sys.argv) < 2:
-    print("Usage: python3 search.py [input]")
-    sys.exit(1)
+from collections import defaultdict
 
-user_input = sys.argv[1]
-print(f"You entered: {user_input}")
+d = defaultdict(set)
+
+d[0].add(1)
+d[0].add(2)
+print(d)
+
+d[0].remove(2)
+print(d)
+
+
+# d[0].remove(3) # errors
+# print(d)
