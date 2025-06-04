@@ -27,6 +27,6 @@ def count():
         num_files += len(filenames)
         num_dirs += len(dirnames)
     
-    return f"there are probably {num_files} files and {num_dirs} directories in the current directory"
+    return f"there are probably {num_files} files and {num_dirs} directories in {path}"
 
 print(count())
