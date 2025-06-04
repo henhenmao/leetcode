@@ -1,18 +1,8 @@
 
 # reminding myself how defaultdict from collections works
 
+nums = [1,2,3,4]
+i = 5
 
-from collections import defaultdict
-
-d = defaultdict(set)
-
-d[0].add(1)
-d[0].add(2)
-print(d)
-
-d[0].remove(2)
-print(d)
-
-
-# d[0].remove(3) # errors
-# print(d)
+a = nums[i] if i < len(nums) else 4312
+print(a)
