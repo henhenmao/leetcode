@@ -3,12 +3,12 @@ from typing import List
 
 """
 271. Encode and Decode Strings (https://neetcode.io/problems/string-encode-and-decode?list=blind75)
-this was a problem in NeetCode roadmap and is locked behind premium in LeetCode
+this was a problem in NeetCode roadmap and is locked behind premium in LeetCode (tragic)
 
 this is a very interesting problem
 
-encoding:
-
+dude i do NOT want to comment this code
+looks like a mess
 
 """
 
