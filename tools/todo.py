@@ -15,12 +15,14 @@ divider = "----------------"
 
 def display():
 
-    print()
+    def printFiles(files):
+        for file, path in files:
+            print(f"{file} at {path}")
+
 
     if unfinished_files:
         print(f"UNFINISHED FILES: {len(unfinished_files)}\n{divider}")
-        for file in unfinished_files:
-            print(file)
+        printFiles(unfinished_files)
     else:
         print(f"no unfinished files :)")
 
@@ -28,8 +30,7 @@ def display():
 
     if unfinished_files:
         print(f"NON-OPTIMAL FILES: {len(non_optimal_files)}\n{divider}")
-        for file in non_optimal_files:
-            print(file)
+        printFiles(non_optimal_files)
     else:
         print(f"everything is optimal :)")
 
@@ -37,8 +38,7 @@ def display():
 
     if no_comment_files:
         print(f"NO COMMENTS FILES: {len(no_comment_files)}\n{divider}")
-        for file in no_comment_files:
-            print(file)
+        printFiles(no_comment_files)
     else:
         print(f"everything is commented :)")
     print()
@@ -55,17 +55,15 @@ def findUF():
 
         # print(f"Directory: {dirpath}")
         for filename in filenames:
+            res = [filename, os.path.join(dirpath, filename)]
             name, _ = os.path.splitext(filename) # separates file name and file extension
             if name.endswith("UF"):
-                unfinished_files.append(filename)
+                unfinished_files.append(res)
             elif name.endswith("NO"):
-                non_optimal_files.append(filename)
+                non_optimal_files.append(res)
             elif name.endswith("NC"):
-                no_comment_files.append(filename)
+                no_comment_files.append(res)
     display()
-
-
-
 
 findUF()
 
