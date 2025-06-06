@@ -1,8 +1,11 @@
 
 # reminding myself how defaultdict from collections works
 
-nums = [1,2,3,4]
-i = 5
-
-a = nums[i] if i < len(nums) else 4312
+a = set([1,2,3,4])
 print(a)
+
+b = set([3,4,5,6])
+print(b)
+
+c = a.union(b)
+print(c)
