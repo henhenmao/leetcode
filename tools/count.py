@@ -7,8 +7,8 @@ i actually have no idea how accurate this is
 """
 
 def count():
-    num_files = -1 # readme.md gets counted
-    num_dirs = 0
+    num_files = 0 # readme.md gets counted as well
+    num_dirs = 0 # tools directory gets
 
     # print(os.getcwd()) gets the current working directory, not the directory the script is located in
 
@@ -19,9 +19,6 @@ def count():
 
         if ".git" in dirnames:
             dirnames.remove(".git")
-            
-        if "stuff" in dirnames:
-            dirnames.remove("stuff")
 
         
         num_files += len(filenames)
