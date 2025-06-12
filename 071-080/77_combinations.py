@@ -14,9 +14,7 @@ algorithm:
 
 runtime: O(C(n, k) * k), C(n, k) are the number of total combinations of n choose k
     we multiply C(n * k) by k since for every combination, we make a copy of the built subarray of size k to the result
-space: O()
-
-
+space: O(C(n, k) * k)
 """
 
 
