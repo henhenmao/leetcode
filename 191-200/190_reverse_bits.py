@@ -14,7 +14,6 @@ runtime: O(n) where n is the length of the binary string
 space: O(n)
 """
 
-
 def reverseBits(n: int) -> int: # n is binary input
     n = f"{n:032b}"[::-1] # converts the integer into a 32-bit binary string with leading zeros
     return (int(n, 2))
