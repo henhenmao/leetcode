@@ -1,11 +1,30 @@
 
+
+import copy
+
 # reminding myself how defaultdict from collections works
 
-a = set([1,2,3,4])
-print(a)
+# a = set([1,2,3,4])
+# print(a)
 
-b = set([3,4,5,6])
-print(b)
+# b = set([3,4,5,6])
+# print(b)
 
-c = a.union(b)
-print(c)
+# c = a.union(b)
+# print(c)
+
+
+# original = [[1, 2], [3, 4]]
+# shallow = original
+# deep = copy.deepcopy(original)
+
+# print("original:", id(original))
+# print("shallow:", id(shallow))
+# print("deep:", id(deep))
+# print()
+# print("original:", id(original[0]))
+# print("shallow:", id(shallow[0]))
+# print("deep:", id(deep[0]))
+
+a = {1:1, 2:2}
+print(len(a))

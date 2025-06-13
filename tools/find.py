@@ -42,9 +42,10 @@ if len(sys.argv) < 2:
     inp = input("what are you looking for: ")
     print()
     search(inp)
+    pass
 else:
     print()
-    for inp in sys.argv:
+    for inp in sys.argv[1:]: # skip the search argument at index 0
         search(inp)
 
 
