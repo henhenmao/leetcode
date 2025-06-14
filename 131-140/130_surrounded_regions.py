@@ -28,7 +28,9 @@ space: O(n * m) visited board
 """
 
 def solve(board: List[List[str]]) -> None:
-
+    """
+    Do not return anything, modify board in-place instead.
+    """
     n = len(board)
     m = len(board[0])
 
@@ -80,16 +82,11 @@ def solve(board: List[List[str]]) -> None:
             if board[i][j] == "O" and not visited[i][j]:
                 board[i][j] = "X"
     
-    return board
-
-
-
-
-
-
     
-board = [["X","X","X","X"],
-         ["X","O","O","X"],
-         ["X","X","O","X"],
-         ["X","O","X","X"]]
-print(solve(board))
+# board = [["X","X","X","X"],
+#          ["X","O","O","X"],
+#          ["X","X","O","X"],
+#          ["X","O","X","X"]]
+# solve(board)
+# for row in board:
+#     print(row)
