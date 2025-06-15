@@ -71,7 +71,7 @@ def spiralOrder(matrix: List[List[int]]) -> List[int]:
             continue
 
         break
-    
+    return res
     # print(res)
 
 
