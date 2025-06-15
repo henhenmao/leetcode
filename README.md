@@ -11,3 +11,4 @@ Questions marked with an UF (unfinished) after the question are ones which i do 
 Questions marked with an NC (not commented) after the question are ones which were accepted but have the following  
     - no comments or explanation to the code / runtime
 
+i am very proud of my solutions please do not make fun of me
