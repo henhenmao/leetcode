@@ -47,3 +47,7 @@ def rob(nums: List[int]) -> int:
         return dp[i]
 
     return dfs(0)
+
+
+# print(rob([2,9,8,3,6]))
+print(rob([1]))
