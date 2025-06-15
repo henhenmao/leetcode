@@ -50,4 +50,4 @@ def rob(nums: List[int]) -> int:
 
 
 # print(rob([2,9,8,3,6]))
-print(rob([1]))
+# print(rob([1]))

@@ -14,6 +14,9 @@ algorithm:
 
 runtime: O(n) where n is the number of digits in num
 space: O(n)
+
+i jsut did another question and have been made aware of the existence of the replace method in python
+would have made my life 10 times easier
 """
 
 def minMaxDifference(num: int) -> int:
