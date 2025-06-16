@@ -22,8 +22,8 @@ finding the next permutation:
         runtime would be O(n^2) then if a bubble sort
         i'll try it
 
-
     this question is not possible
+    will probably have to look at the solution :(
 
 """
 
