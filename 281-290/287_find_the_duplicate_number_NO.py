@@ -14,13 +14,10 @@ ok i "accidentally" was spoiled the solution and now i know that i should be usi
     since there is a duplicate in nums, there must be a cycle
     pretty much kind of like what i did before but with a pointer method instead of modifying the list directly
 
-    
-
 """
+ 
 def findDuplicate(nums: List[int]) -> int:
     pass
-
-
 
 """
 i didn't read the problem well enough and solved the question by modifying the array:
