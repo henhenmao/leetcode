@@ -39,6 +39,6 @@ def findDuplicate(nums: List[int]) -> int:
         else:
             nums[curr] *= -1
 
-nums = [1,2,3,4,4]
-print(findDuplicate(nums))
+# nums = [1,2,3,4,4]
+# print(findDuplicate(nums))
 
