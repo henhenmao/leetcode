@@ -3,6 +3,16 @@
 """
 5. Longest Palindromic Substring (https://leetcode.com/problems/longest-palindromic-substring/description/)
 
+we can reuse previous palindromes by extending both sides from an already existing palindrone to look for a new one
+
+
+
+
+"""
+
+
+
+"""
 naive solution:
     below implementation uses a double for loop to get all possible substrings
     checks if substring is a palindrome
@@ -14,7 +24,7 @@ space: O(n)
 this solution is crazy slow
 """
 
-
+"""
 def longestPalindrome(s: str) -> str:
         longestStr = 0
         longestLen = 0
@@ -25,5 +35,5 @@ def longestPalindrome(s: str) -> str:
                     longestLen = len(x)
                     longestStr = x
         return longestStr
-
+"""
 
