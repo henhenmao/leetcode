@@ -1,5 +1,5 @@
 
-from collections import heapq
+import heapq
 from typing import List
 
 """
@@ -16,13 +16,17 @@ algorithm:
 
     just make sure you pop the top of the min heap every time the size exceeds k
 
+why didn't just use sort instead of a heap:
+    sorting only gives kth largest element one single time
+    since the elements in the heap are constantly changing, sorting every time would be too inefficient
+
 runtime: O(n * log(n)) where n is the number of elemnts in the stream
 space: O(n)
 """
 
 class KthLargest:
-
     def __init__(self, k: int, nums: List[int]):
+        # putting all elements in a minHeap and limiting the size to k
         self.heap, self.k = nums, k
         heapq.heapify(self.heap)
         while len(self.heap) > k:
