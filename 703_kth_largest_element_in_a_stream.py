@@ -3,7 +3,7 @@ import heapq
 from typing import List
 
 """
-703. Kth Largest Element in a Stream
+703. Kth Largest Element in a Stream (https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
 
 we need to take advantage of the heap data structure 
     heaps allow us to quickly access the minimum or maximum element

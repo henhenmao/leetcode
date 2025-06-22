@@ -4,7 +4,7 @@ from typing import List
 import heapq
 
 """
-973. K Closest Points to Origin
+973. K Closest Points to Origin (https://leetcode.com/problems/k-closest-points-to-origin/description/)
 
 i previously computed the distance for every single point given and turned it into a heap of size n
 instead of heapifying all distances, why not just maintain a heap of size k during the iteration of points

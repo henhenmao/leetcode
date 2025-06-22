@@ -3,7 +3,7 @@ import heapq
 from typing import List
 
 """
-1046. Last Stone Weight
+1046. Last Stone Weight (https://leetcode.com/problems/last-stone-weight/description/)
 
 use a max heap for this problem
 convert stones into a max heap and runt he simulation described in the problem
