@@ -26,5 +26,8 @@ import copy
 # print("shallow:", id(shallow[0]))
 # print("deep:", id(deep[0]))
 
-a = {1:1, 2:2}
-print(len(a))
+# a = {1:1, 2:2}
+# print(len(a))
+
+nums = [1,2,3,4,5,6]
+print(nums[-2:2])
