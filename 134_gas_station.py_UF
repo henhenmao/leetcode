@@ -1,0 +1,18 @@
+
+
+from typing import List
+
+"""
+134. Gas Station (https://leetcode.com/problems/gas-station/description/)
+
+i think if you just start at the gas station with the most gas and try from there
+    if there is not enough gas to make a full circle then it is impossible
+        might as well just start with the most gas if you're going to travel through everything anyways
+
+actually it might be better to start at the gas station with the greatest gas left after doing the first traversal
+who knows
+
+"""
+
+def canCompleteCircuit(gas: List[int], cost: List[int]) -> int:
+    pass
