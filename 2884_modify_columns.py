@@ -6,7 +6,7 @@ import pandas as pd
 
 multiplies each salary in each row by 2
 
-runtime: O(n)
+runtime: O(r)
 space: O(1)
 """
 
