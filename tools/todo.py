@@ -52,7 +52,11 @@ def findUF():
         # skip the git directory (idk why it's there in the first place)
         if ".git" in dirnames:
             dirnames.remove(".git")
-
+        if ".venv" in dirnames:
+            dirnames.remove(".venv")
+        if ".vscode" in dirnames:
+            dirnames.remove(".vscode")
+ 
         # print(f"Directory: {dirpath}")
         for filename in filenames:
             res = [filename, os.path.join(dirpath, filename)]

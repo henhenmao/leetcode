@@ -9,6 +9,7 @@ i actually have no idea how accurate this is
 def count():
     num_files = 0 # readme.md gets counted as well
     num_dirs = 0 # tools directory gets
+    ignore = [".git", ".venv", ".vscode"]
 
     # print(os.getcwd()) gets the current working directory, not the directory the script is located in
 
@@ -17,8 +18,9 @@ def count():
     
     for dirpath, dirnames, filenames in os.walk(path):
 
-        if ".git" in dirnames:
-            dirnames.remove(".git")
+        for i in ignore:
+            if i in dirnames:
+                dirnames.remove(i)
 
         
         num_files += len(filenames)
