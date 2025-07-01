@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/henrymao/leetcode/345_reverse_vowels_of_a_string'
-relocations:     []
-...
