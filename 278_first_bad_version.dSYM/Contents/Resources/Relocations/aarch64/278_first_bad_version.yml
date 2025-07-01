@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/henrymao/leetcode/278_first_bad_version'
-relocations:     []
-...
