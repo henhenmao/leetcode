@@ -1,6 +1,6 @@
 
 /*
-344. Reverse String
+344. Reverse String (https://leetcode.com/problems/reverse-string/description/)
 You must do this by modifying the input array in-place with O(1) extra memory.
 
 simple code loops a pointer through the first half of the string list
