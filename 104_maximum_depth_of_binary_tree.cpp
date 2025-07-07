@@ -29,6 +29,20 @@ space: O(n)
 #include <iostream>
 using namespace std;
 
+int maxDepth(TreeNode* root) {
+    if (root == nullptr) {
+        return 0;
+    }
+
+    int leftDepth = maxDepth(root->left);
+    int rightDepth = maxDepth(root->right);
+
+    return max(leftDepth, rightDepth) + 1; // adding current node to the max
+}
+
+/*
+// less clean code, helper function is not actually needed
+
 void getDepth(TreeNode* root, int count, int& maxCount) {
     if (root->right == nullptr && root->left == nullptr) {
         maxCount = max(maxCount, count);
@@ -55,3 +69,4 @@ int maxDepth(TreeNode* root) {
     getDepth(root, count, maxCount);
     return maxCount;
 }
+*/
