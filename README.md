@@ -1,6 +1,10 @@
 
 This folder contains my LeetCode solutions
 
+This is my profile -> https://leetcode.com/u/henhenmao/ 
+
+💔💔💔
+
 Questions marked with a NO (not optimal) after the question are ones which were accepted by leetcode but have one of the following  
     - non-optimal solution that should not have been accepted  (bad runtime or space management)  
     - cheating (violating a restriction or rule stated in the leetcode question)
