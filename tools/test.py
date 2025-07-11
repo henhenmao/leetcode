@@ -29,10 +29,18 @@ import copy
 # a = {1:1, 2:2}
 # print(len(a))
 
-nums = [1,2,3,4,5,6]
-print(nums[-2:2])
+# nums = [1,2,3,4,5,6]
+# print(nums[-2:2])
 
 
-a = "abc"
+# a = "abc"
 
-print(a[:5])
+# print(a[:5])
+
+
+a = 3
+b = a
+a += 1
+print(b)
+
+
