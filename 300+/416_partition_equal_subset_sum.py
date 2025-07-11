@@ -18,7 +18,7 @@ dp: dp[j] means that a subset sum of j is possible with the current set of numbe
     dp[0] is True at the start since a subset sum of 0 is always possible (empty subset)
 
 algorithm:
-    1. case: if sum of all numbers is odd, return False immediately
+    1. edge case?: if sum of all numbers is odd, return False immediately
     2. set target as sum(nums)//2: sum we are trying to build in the subset
     3. set dp table
     4. for each number num in nums, update dp[j] from target down to nums
