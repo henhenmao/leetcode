@@ -34,6 +34,8 @@ we want to build a new integer that is the reverse digits of x
 
         once x == 0, compare original to reverse, if they are the same, x is a palindrome
     
+runtime: O(n) where n is the number of digits in x
+space: O(1)
 """
 
 
