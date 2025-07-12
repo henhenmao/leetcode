@@ -12,6 +12,8 @@ elite ball knowledge required for this question
         greedy algorithm will do 6 - 4 - 1 - 1 = 3 coins
         actual answer would be 6 - 3 - 3 = 2 coins
 
+    hahhahaha im so smart for knowing this bahahahhahaha
+        
     i dont wanna do this rn
 
 ok i'm back like a few weeks later lmao
