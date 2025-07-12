@@ -15,6 +15,8 @@ things:
     - if all values from 1 to n, solution is max(nums)+1
 
 dude i actually have no idea
-
+ts is cooked
 """
+
+
 
