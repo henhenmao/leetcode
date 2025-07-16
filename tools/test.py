@@ -1,6 +1,7 @@
 
 
 import copy
+import random
 
 # reminding myself how defaultdict from collections works
 
@@ -38,9 +39,10 @@ import copy
 # print(a[:5])
 
 
-a = 3
-b = a
-a += 1
-print(b)
+# a = 3
+# b = a
+# a += 1
+# print(b)
 
 
+print(random.randint(1,3))
