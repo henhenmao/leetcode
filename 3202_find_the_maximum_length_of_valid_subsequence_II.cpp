@@ -1,6 +1,5 @@
 
 
-
 /*
 3202. Find the Maximum Length of Valid Subsequence II (https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/description/?envType=daily-question&envId=2025-07-17)
 
@@ -9,11 +8,36 @@ for each subsequence of nums, make sure each instance of (nums[i] + nums[i+1]) %
     keep track of the previous value added to the subsequence, let prev = previous value
     if current value (nums[i] + prev) % k != mod, cannot add nums[i] to the subsequence
 
-memoization state:
+memoization state: dp[i][mod+1]
+    we do mod+1 because of the mod state of -1
+    basically shifting everything down by 1
+
+algorithm:
+    1. create 2d memoization table with size nums.size()+1 * k+1
+
+    2. for each value nums[j], call recursive function with state i = j, mod = -1
+
+    3. if mod == -1 (if first two elements haven't been chosen yet and no mod yet)
+        iterate from j = i+1 to nums.size() to get each pair 
+        curr_mod = (nums[i] + nums[j]) % 2 (mod for the rest of the subsequence)
+        return 2 + maximumLength(nums, k, j, curr_mod, dp)
+        we add 2 to the returned value since we are adding nums[i] and nums[j] to the subsequence
 
 
+    4. if mod != -1 (subsequence has a mod)
+        starting from j = i+1, iterate through all numbers to nums.size()
+        check each value of (nums[i] + nums[j]) % 2
+        only recurse into values of nums[j] where (nums[i] + nums[j]) % 2 == curr_mod
+        if a valid value of j is encountered, return 1 + maximumLength(nums, k, j, curr_mod)
 
+    5. if the previous two steps did not result in a return, return 0
 
+    6. oh yeah and memoize everything in the dp
+
+runtime: O(n^2 * k) where n is the size of nums
+    this is because for each state of (i, mod), we loop over nums with j from i+1 to n
+
+space: O(n * k)
 */
 
 #include <iostream>
