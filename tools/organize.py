@@ -35,8 +35,10 @@ def organize():
         # i just don't want folders containing single files
 
         limit = 300
+        if "_UF" in file:
+            folder = f"unfinished"
 
-        if start >= limit:
+        elif start >= limit:
             folder = f"{limit}+"
         else:
             folder = f"{int(start):03d}-{int(end):03d}" # pads the numbers to fit into three digits
