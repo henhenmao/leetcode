@@ -3,9 +3,6 @@
 /*
 1957. Delete Characters to Make Fancy String (https://leetcode.com/problems/delete-characters-to-make-fancy-string/description/?envType=daily-question&envId=2025-07-21)
 
-get the length of each consecutive substring in the string
-ex. "aaabbbbcc" -> "aaa" + "bbbb" + "cc" -> [3, 4, 2]
-
 algorithm:
     1. set the current character to s[0] and set a current count to 1, initialize result string with s[0]
     2. iterate through the string from 1 to s.length()-1
