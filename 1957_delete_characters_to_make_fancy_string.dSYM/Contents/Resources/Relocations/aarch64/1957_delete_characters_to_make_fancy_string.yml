@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/henrymao/leetcode/1957_delete_characters_to_make_fancy_string'
+relocations:     []
+...
