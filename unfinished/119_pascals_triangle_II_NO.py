@@ -6,7 +6,6 @@ from typing import List
 Follow up: Could you optimize your algorithm to use only O(rowIndex) extra space?
 
 i literally did the same thing from the previous question but returned the row at rowindex
-i'll mark this as unfinished
 
 runtime: O(n^2)
 space: O(n^2)
