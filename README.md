@@ -16,8 +16,8 @@ Questions marked with a UF (unfinished):
 Questions marked with an NC (not commented):
     - no comments or explanation to the code / runtime
 
-Questions marked with a AF (accepted, follow up):
+Questions marked with a AF (accepted without follow up):
     - good fair solution accepted
-    - follow-up question that was not addressed
+    - follow-up question that was ignored in the solution
 
 i am very proud of my solutions please do not make fun of me
