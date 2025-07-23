@@ -29,6 +29,8 @@ repeat the process of adding words to vector currLine, keep track of the total l
 
 runtime: O(n * maxWidth) where n is the length of words
 space: O(n)
+
+lmao this beats like 0.3% of people probably because theres a O(n) solution
 */
 
 #include <iostream>
