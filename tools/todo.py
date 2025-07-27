@@ -8,7 +8,7 @@ run this to locate files that are marked NO, UF, or NC
 too lazy to write it now i'll do it later    
 """
 
-todos = ["UF", "NO", "NC", "AF"]
+todos = ["UF", "NO", "NC"]
 
 unfinished_files = []
 non_optimal_files = []
@@ -45,12 +45,12 @@ def display():
         print(f"everything is commented :)")
     print()
 
-    if follow_up_files:
-        print(f"FOLLOW UP FILES: {len(follow_up_files)}\n{divider}")
-        printFiles(follow_up_files)
-    else:
-        print(f"no follow up questions :)")
-    print()
+    # if follow_up_files:
+    #     print(f"FOLLOW UP FILES: {len(follow_up_files)}\n{divider}")
+    #     printFiles(follow_up_files)
+    # else:
+    #     print(f"no follow up questions :)")
+    # print()
 
         
 def findUF():
@@ -76,10 +76,9 @@ def findUF():
                 non_optimal_files.append(res)
             elif name.endswith("NC"):
                 no_comment_files.append(res)
-            elif name.endswith("AF"):
-                follow_up_files.append(res)
-
-                
+            # elif name.endswith("AF"):
+            #     print(name)
+            #     follow_up_files.append(res)
     display()
 
 findUF()
