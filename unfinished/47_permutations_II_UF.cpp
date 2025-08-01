@@ -8,9 +8,6 @@
 basically do the regular dfs/backtracking to get all permutations
 sort the nums first and skip any adjacent duplicates at a given recursion loop
 
-im tired boss
-can't code anymore 💔
-
 */
 
 #include <iostream>
@@ -24,12 +21,5 @@ vector<vector<int>> permuteUnique(vector<int>& nums) {
 }
 
 int main() {
-    vector<int> nums = {1,1,2};
-    vector<vector<int>> res;
-    for (vector<int> i : res) {
-        for (int j : i) {
-            cout << j << " ";
-        }
-        cout << endl;
-    }
+    
 }
