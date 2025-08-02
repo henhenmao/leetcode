@@ -8,7 +8,7 @@ struct ListNode {
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
-}
+};
 
 /*
 1290. Convert Binary Number in a Linked List to Integer (https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/?envType=daily-question&envId=2025-07-14)
