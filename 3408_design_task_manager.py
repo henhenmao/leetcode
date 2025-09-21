@@ -38,7 +38,7 @@ runtime:
     add(): O(1)
     edit(): O(1)
     rmv() O(1)
-    execTop(): O(log n)
+    execTop(): O(log n)w
 
 space: O(n)
 """
