@@ -6,7 +6,8 @@
 just keep a sorted array of all numbers added so far
 use a binary search to find the median of the current sorted array whenever the findMedian function is called
 
-addNum
+addNum(num)
+    
     
 
 
