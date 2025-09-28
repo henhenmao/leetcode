@@ -45,6 +45,8 @@
         "__hash_table": "cpp",
         "__split_buffer": "cpp",
         "__node_handle": "cpp",
-        "execution": "cpp"
+        "execution": "cpp",
+        "complex": "cpp",
+        "sstream": "cpp"
     }
 }
